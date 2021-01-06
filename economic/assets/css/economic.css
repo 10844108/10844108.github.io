@@ -1,0 +1,60 @@
+body{
+    font-family: '微軟正黑體',Arial,'標楷體';
+    margin: 0px; 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.tablink {
+    background-color: #555;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 2% 0%;
+    width: 33.3%;
+  }
+  
+.tablink:hover {
+    background-color: #777;
+    
+  }
+.tabcontent {
+    padding: 5%;
+    height:150%;
+}
+.tabcontent h2{
+      font-size: 32px;
+      margin-top: 5%;
+}
+.tabcontent h5{
+  text-align: right;
+}
+
+.panel{
+    width: 100%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+.panel p{
+      font-size: 24px;
+      line-height: 80%;
+}
+.panel img{
+  width: 50%;
+  height: 100%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.all{
+      width: 100%;
+}
+  #economic {background-color: palegoldenrod;}
+  #price {background-color: #aee9f8;}
+  #unemployment {background-color: #f1c3ff;}
