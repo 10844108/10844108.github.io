@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene X 承包你的衣櫥</title>
+    <link  href="assets/css/All.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="web">
+            <a href="index.html">
+                <img src="images/logo1.PNG" alt="" >
+            </a>
+        </div>
+
+        <nav class="navbtn">
+            <a href="All.html">ALL</a>
+            <a href="new.html">NEW</a>
+            <a href="hot.html">HOT</a>
+            <a href="sale.html">SALE</a>
+            <a href="contact.html">OTHERS</a>
+        </nav>
+
+        <div class="two">
+            <div class="navex">
+                <form class="example" action="/PHP_Form.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><img src="images/搜尋.jpg" alt=""></button>
+                </form>
+            </div>
+            <div class="navphoto">
+              <a href="login.html"><img src="images/person.png" alt=""></a>
+              <button class="openBtn" onclick="openSearch()"><img src="images/mes.png" alt=""></button>
+              <a href="heart.html"><img src="images/heart.png" alt=""></a>
+              <a href="shopping.html"><img src="images/shopping.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="myOverlay" class="overlay" style="background: url(images/0-10.jpg); background-repeat: no-repeat; background-size: cover;">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form  class="form-container" action="">
+                    <label for="msg"><h1><b>Message</b></h1></label>
+                    <textarea placeholder="Welcome message" name="msg" required></textarea>
+                    <div class="btnbtw">
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+      </div>
+    
+
+
+  
+
+<div class="Goods">
+  
+    <div class="right">
+    
+        <div class="rightmenu">
+            <div class="menuh">
+                <h2>商品分類</h2>
+            </div>
+        
+            <div class="menu1">
+                <button class="accordion"><a href="#1">上衣身</a> 
+                    <img src="images/箭頭向下.jpg" alt="">
+                </button>
+                <div class="panel">
+                    <a href="#1-1">安生</a><br>
+                    <a href="#1-2">七月</a><br>
+                    <a href="#1-3">清平調</a><br>
+                    <a href="#1-4">小露營</a><br>
+                    <a href="#1-5">捲簾人</a><br>
+                    <a href="#1-6">哈克隆</a><br>
+                    <a href="#1-7">薄荷奶油</a><br>
+                    <a href="#1-8">午睡妖精</a><br>
+                    <a href="#1-9">亨利八世</a><br>
+                    <a href="#1-10">草地女王</a><br>
+                    <a href="#1-11">玻璃絲襪(短襯衫)</a><br>
+                    <a href="#1-12">玻璃絲襪(長襯衫)</a><br>
+                </div>
+            </div>
+
+            <div class="menu1">
+                <button class="accordion"><a href="#2">下衣身</a> 
+                    <img src="images/箭頭向下.jpg" alt="">
+                </button>
+                <div class="panel">
+                    <a href="#2-1">下北澤</a><br>
+                    <a href="#2-2">白月光</a><br>
+                    <a href="#2-3">朱砂痣</a><br>
+                    <a href="#2-4">聖誕櫥窗</a><br>
+                    <a href="#2-5">星空墨水</a><br>
+                    <a href="#2-6">寄宿學院</a><br>
+                    <a href="#2-7">晨間主播</a><br>
+                    <a href="#2-8">芝麻奶酪</a><br>
+                    <a href="#2-9">Moon River</a><br>
+                </div>
+            </div>
+
+            <div class="menu1">    
+                <button class="accordion"><a href="#3">外套</a> 
+                    <img src="images/箭頭向下.jpg" alt="">
+                </button>
+                <div class="panel">
+                    <a href="#3-1">調香師</a><br>
+                    <a href="#3-2">代官山</a><br>
+                    <a href="#3-3">湖畔小屋</a><br>
+                    <a href="#3-4">柏林少女</a><br>
+                    <a href="#3-5">名媛教育</a><br>
+                    <a href="#3-6">雪國童話</a><br>
+                    <a href="#3-7">模仿遊戲</a><br>
+                    <a href="#3-8">可甜可鹽</a><br>
+                    <a href="#3-9">早安紐約</a><br>
+                </div>
+            </div>
+            
+            <div class="menu1">
+                <button class="accordion"><a href="#4">洋裝</a> 
+                    <img src="images/箭頭向下.jpg" alt="">
+                </button>
+                <div class="panel">
+                    <a href="#4-1">水手故事</a><br>
+                    <a href="#4-2">北非諜影</a><br>
+                    <a href="#4-3">藍莓優格</a><br>
+                    <a href="#4-4">末路狂花</a><br>
+                    <a href="#4-5">唐頓洋裝</a><br>
+                    <a href="#4-6">黑影家族</a><br>
+                </div>
+            </div>
+            
+            <div class="menu1">
+                <button class="accordion"><a href="#5">配件</a> 
+                    <img src="images/箭頭向下.jpg" alt="">
+                </button>
+                <div class="panel">
+                    <a href="#5-1">桂冠花圈</a><br>
+                    <a href="#5-2">橄欖花圈</a><br>
+                    <a href="#5-3">普普藝術</a><br>
+                    <a href="#5-4">皮膚遊戲</a><br>
+                    <a href="#5-5">珍珠航線</a><br>
+                    <a href="#5-6">沿海地帶</a><br>
+                    <a href="#5-7">皮革綁帶</a><br>
+                    <a href="#5-8">竹編凱莉</a><br>
+                    <a href="#5-9">時空旅人</a><br>
+                    <a href="#5-10">雪松包</a><br>
+                    <a href="#5-11">賈桂林</a><br>
+                    <a href="#5-12">向尾貓</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="left">
+        <div class="theme">
+            <div class="theme1">
+                <a id="1" style="margin-top: 5%;"><h1>上衣身</h1></a>  
+            </div>
+            <div class="leftcontent">
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-1">
+                    <div class="txt">
+                       <img src="images/01/1-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>安生</h2>
+                            <h3>NT$1,780 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-2">
+                    <div class="txt">
+                       <img src="images/02/2-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>七月</h2>
+                            <h3>NT$1,780 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-3">
+                    <div class="txt">
+                       <img src="images/03/3-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>清平調</h2>
+                            <h3>NT$1,580 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-4">
+                    <div class="txt">
+                        <img src="images/04/4-1.jpg" alt="">
+                        <div class="contain">
+                            <h2>小露營</h2>
+                            <del><h3>NT$1,280</h3></del>
+                            <h4>NT$980</h4></a>
+                            <div class="photo">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                            alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-5">
+                    <div class="txt">
+                       <img src="images/05/5-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>捲簾人</h2>
+                            <h3>NT$1,180 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-6">
+                    <div class="txt">
+                       <img src="images/06/6-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>哈克龍</h2>
+                            <h3>NT$680 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-7">
+                    <div class="txt">
+                       <img src="images/07/7-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>薄荷奶油</h2>
+                            <h3>NT$1,480 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-8">
+                    <div class="txt">
+                       <img src="images/08/8-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>午夜妖精</h2>
+                            <h3>NT$1,680 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-9">
+                    <div class="txt">
+                       <img src="images/09/9-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>亨利八世</h2>
+                            <h3>NT$1,480 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-10">
+                    <div class="txt">
+                       <img src="images/10/10-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>草地女王</h2>
+                            <h3>NT$1,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-11">
+                    <div class="txt">
+                        <img src="images/11/10-1.jpg" alt="">
+                        <div class="contain">
+                            <h2>玻璃絲襪(短襯衫)</h2>
+                            <del><h3>NT$1,580</h3></del>
+                            <h4>NT$1,280</h4></a>
+                            <div class="photo">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                            alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="1-12">
+                    <div class="txt">
+                       <img src="images/12/12-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>玻璃絲襪(長襯衫)</h2>
+                            <h3>NT$1,780 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+ 
+  
+        <div class="theme">
+            <div class="theme1">
+                <a id="2"><h1>下衣身</h1></a>  
+            </div>
+            <div class="leftcontent">
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-1">
+                    <div class="txt">
+                        <img src="images/13/13-1.jpg" alt="">
+                        <div class="contain">
+                            <h2>下北澤</h2>
+                            <del><h3>NT$1,680</h3></del>
+                            <h4>NT$1,180</h4></a>
+                            <div class="photo">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                            alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-2">
+                    <div class="txt">
+                       <img src="images/14/14-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>白月光</h2>
+                            <h3>NT$1,680 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-3">
+                    <div class="txt">
+                       <img src="images/15/15-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>朱砂痣</h2>
+                            <h3>NT$1,680 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-4">
+                    <div class="txt">
+                       <img src="images/16/16-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>聖誕櫥窗</h2>
+                            <h3>NT$2,280 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-5">
+                    <div class="txt">
+                       <img src="images/17/17-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>星空墨水</h2>
+                            <h3>NT$1,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-6">
+                    <div class="txt">
+                       <img src="images/18/18-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>寄宿學院</h2>
+                            <h3>NT$1,880 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-7">
+                    <div class="txt">
+                       <img src="images/19/19-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>晨間主播</h2>
+                            <h3>NT$1,580 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-8">
+                    <div class="txt">
+                       <img src="images/20/20-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>芝麻奶酪</h2>
+                            <h3>NT$1,580 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="2-9">
+                    <div class="txt">
+                       <img src="images/21/21-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>Moon River</h2>
+                            <h3>NT$1,580 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                      
+
+            </div>
+        </div>
+
+
+        <div class="theme">
+            <div class="theme1">
+                <a id="3"><h1>外套</h1></a>  
+            </div>
+            <div class="leftcontent">
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-1">
+                    <div class="txt">
+                       <img src="images/22/22-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>調香師</h2>
+                            <h3>NT$2,480 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-2">
+                    <div class="txt">
+                       <img src="images/23/23-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>代官山</h2>
+                            <h3>NT$2,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-3">
+                    <div class="txt">
+                       <img src="images/24/24-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>湖畔小屋</h2>
+                            <h3>NT$1,880 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-4">
+                    <div class="txt">
+                       <img src="images/25/25-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>柏林少女</h2>
+                            <h3>NT$2,480 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-5">
+                    <div class="txt">
+                        <img src="images/26/26-1.jpg" alt="">
+                        <div class="contain">
+                            <h2>名媛教育</h2>
+                            <del><h3>NT$3,880</h3></del>
+                            <h4>NT$3,080</h4></a>
+                            <div class="photo">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                            alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-6">
+                    <div class="txt">
+                       <img src="images/27/27-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>雪國童話</h2>
+                            <h3>NT$4,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-7">
+                    <div class="txt">
+                       <img src="images/28/28-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>模仿遊戲</h2>
+                            <h3>NT$6,280 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-8">
+                    <div class="txt">
+                        <img src="images/29/29-1.jpg" alt="">
+                        <div class="contain">
+                            <h2>可甜可鹽</h2>
+                            <del><h3>NT$4,380</h3></del>
+                            <h4>NT$4,380</h4></a>
+                            <div class="photo">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                            alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="3-9">
+                    <div class="txt">
+                       <img src="images/30/30-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>早安紐約</h2>
+                            <h3>NT$4,680 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    
+        <div class="theme">
+            <div class="theme1">
+                <a id="4"><h1>洋裝</h1></a>  
+            </div>
+            <div class="leftcontent">
+               
+                <div class="imgtxt">
+                    <a href="produce.html" id="4-1">
+                    <div class="txt">
+                       <img src="images/31/31-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>水手故事</h2>
+                            <h3>NT$1,780 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="4-2">
+                    <div class="txt">
+                       <img src="images/32/32-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>北非諜影</h2>
+                            <h3>NT$1,880 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="4-3">
+                    <div class="txt">
+                       <img src="images/33/33-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>藍莓優格</h2>
+                            <h3>NT$1,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="4-4">
+                    <div class="txt">
+                       <img src="images/34/34-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>末路狂花</h2>
+                            <h3>NT$1,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="4-5">
+                    <div class="txt">
+                       <img src="images/35/35-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>唐頓洋裝</h2>
+                            <h3>NT$2,480 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="4-6">
+                    <div class="txt">
+                       <img src="images/36/36-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>黑影家族</h2>
+                            <h3>NT$2,080 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        </div> 
+
+        <div class="theme">
+            <div class="theme1">
+                <a id="5"><h1>配件</h1></a>  
+            </div>
+            <div class="leftcontent">
+              
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-1">
+                    <div class="txt">
+                       <img src="images/37/37-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>桂冠花圈</h2>
+                            <h3>NT$480 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-2">
+                    <div class="txt">
+                       <img src="images/38/38-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>橄欖花圈</h2>
+                            <h3>NT$380 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-3">
+                    <div class="txt">
+                       <img src="images/39/39-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>普普藝術</h2>
+                            <h3>NT$350 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-4">
+                    <div class="txt">
+                       <img src="images/40/40-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>皮膚遊戲</h2>
+                            <h3>NT$580 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-5">
+                    <div class="txt">
+                       <img src="images/41/41-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>珍珠航線</h2>
+                            <h3>NT$580 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-6">
+                    <div class="txt">
+                       <img src="images/42/42-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>沿海地帶</h2>
+                            <h3>NT$380 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-7">
+                    <div class="txt">
+                       <img src="images/43/43-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>皮革綁帶</h2>
+                            <h3>NT$380 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-8">
+                    <div class="txt">
+                       <img src="images/44/44-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>竹編凱莉</h2>
+                            <h3>NT$1,880 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-9">
+                    <div class="txt">
+                       <img src="images/45/45-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>時空旅人</h2>
+                            <h3>NT$2,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-10">
+                    <div class="txt">
+                        <img src="images/46/46-1.jpg" alt="">
+                        <div class="contain">
+                            <h2>雪松包</h2>
+                            <del><h3>NT$1,480</h3></del>
+                            <h4>NT$1,180</h4></a>
+                            <div class="photo">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                            alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-11">
+                    <div class="txt">
+                       <img src="images/47/47-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>賈桂琳</h2>
+                            <h3>NT$2,980 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgtxt">
+                    <a href="produce.html" id="5-12">
+                    <div class="txt">
+                       <img src="images/48/48-1.jpg" alt=""> 
+                        <div class="contain">
+                            <h2>向尾貓</h2>
+                            <h3>NT$880 <br></h3></a>
+                            <div class="photo">
+                                  <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png" alt=""></button>
+                                  <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="web2">
+        <a href="index.html">
+            <img src="images/logo1.PNG" alt="" >
+        </a>
+    </div>
+
+    <nav class="navbtn2">
+        <div class="item1">
+           <h3>關於我們</h3> 
+            <a href="story.html">品牌故事</a>
+        </div>
+        <div class="item2">
+          <h3>購物說明</h3>  
+            <a href="Process.html">購物流程</a>
+        </div>
+        <div class="item3">
+           <h3>服務資訊</h3> 
+           <a href="member.html">聯絡我們</a>
+        </div>    
+    </nav>
+
+
+    <div class="navphoto2">
+       <a href="https://instagram.com/serenevitale?igshid=1f8jgvktgckd6" target="_blank"><img src="images/ig.png" alt=""></a>
+       <a href="mailto:serene.vitale@gmail.com?subject=與我聯絡"><img src="images/mail.png" alt=""></a>	
+       <a href="https://www.youtube.com/channel/UCgbscTZz8BHUUCtuXZJLcaA/featured" target="_blank"><img src="images/yt.png" alt=""></a>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn">Top</button>
+</div>
+<div class="co">copyright&copy;Group21 2021</div> 
+<script>
+    function heart() {
+        alert("已成功加入追蹤清單");
+    }
+    function shopping(){
+        alert("已成功加入購物車清單");
+    }
+</script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/Top.js"></script>
+<script src="assets/js/Form.js"></script>
+
+</body>
+</html>
