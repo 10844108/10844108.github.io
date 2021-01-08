@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene X 承包你的衣櫥</title>
+    <link href="assets/css/produce.css" rel="stylesheet"  type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="web">
+            <a href="index.html">
+                <img src="images/logo1.PNG" alt="" >
+            </a>
+        </div>
+
+        <nav class="navbtn">
+            <a href="All.html">ALL</a>
+            <a href="new.html">NEW</a>
+            <a href="hot.html">HOT</a>
+            <a href="sale.html">SALE</a>
+            <a href="contact.html">OTHERS</a>
+        </nav>
+
+        <div class="two">
+            <div class="navex">
+                <form class="example" action="/PHP_Form.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><img src="images/搜尋.jpg" alt=""></button>
+                </form>
+            </div>
+            <div class="navphoto">
+              <a href="login.html"><img src="images/person.png" alt=""></a>
+              <button class="openBtn" onclick="openSearch()"><img src="images/mes.png" alt=""></button>
+              <a href="heart.html"><img src="images/heart.png" alt=""></a>
+              <a href="shopping.html"><img src="images/shopping.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="myOverlay" class="overlay" style="background: url(images/0-10.jpg); background-repeat: no-repeat; background-size: cover;">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form  class="form-container" action="">
+                    <label for="msg"><h1><b>Message</b></h1></label>
+                    <textarea placeholder="Welcome message" name="msg" required></textarea>
+                    <div class="btnbtw">
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+      </div>
+    
+
+
+
+<div class="Good">
+    
+    <div class="right">
+        <div class="container">
+ 
+            <div class="mySlides">
+            <img src="images/01/1-1.jpg">
+            </div>
+        
+            <div class="mySlides">
+            <img src="images/01/1-2.jpg">
+            </div>
+        
+            <div class="mySlides">
+            <img src="images/01/1-3.jpg">
+            </div>
+            
+            <div class="mySlides">
+            <img src="images/01/1-4.jpg">
+            </div>
+        
+            <div class="mySlides">
+            <img src="images/01/1-5.jpg">
+            </div>
+            
+            <div class="mySlides">
+            <img src="images/01/1-6.jpg">
+            </div>
+
+            
+        
+            <div class="row">
+                <div class="column">
+                    <img class="demo" src="images/01/1-1.jpg" onclick="currentSlide(1)" >
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/01/1-2.jpg" onclick="currentSlide(2)" >
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/01/1-3.jpg" onclick="currentSlide(3)" >
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/01/1-4.jpg" onclick="currentSlide(4)" >
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/01/1-5.jpg" onclick="currentSlide(5)" >
+                </div>    
+                <div class="column">
+                    <img class="demo" src="images/01/1-6.jpg" onclick="currentSlide(5)" >
+                </div>  
+            </div>
+        </div>      
+    </div>
+
+
+    <div class="left">
+        <form action="/action_page.php">
+            <h1>安生</h1>
+            <ul>
+				<li class="tag">超商取貨滿3500免運</li>
+			</ul>
+            <div class="price">
+                <h2>NT$1,780</h2>
+            </div>
+                <div class="colornum" style="margin-bottom: 0">
+                    <p>顏色</p>              
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        # 貝殼白 
+                    </button>
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        ＃墨綠色 
+                    </button>
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        ＃森林綠 
+                    </button>
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        ＃茉莉黃
+                    </button>
+                
+    
+                </div>
+
+                <p>尺寸</p>
+                <div class="usize">
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        S 
+                    </button>
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        M 
+                    </button>
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        L 
+                    </button>
+                    <button type="button" class="choice" onclick="choice1()" name="serene">
+                        XL
+                    </button>
+                </div>
+
+                <div class="unum">
+                    <p>數量</p>     
+                        <div>
+                            <select name="qty" id="qty" class="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                </div>
+                    
+                <div class="amount" > 
+                    <p>庫存數量 : </p>
+                </div>      
+                    <button type="button" class="buy" onclick="shopping()" style="margin-top:10px">加入購物車</button>   
+                    <a href="shopping.html"><button type="button" class="buy"  style="margin-top:10px">立即結帳</button></a> 
+         </form>
+    </div>
+</div>
+
+<div class="behind">
+    <div class="tab">
+       <button class="tablink" onclick="openPage('aa',this)" id="tabcontent">商品詳情</button>
+       <button class="tablink" onclick="openPage('bb',this)">付款與運送</button>
+       <button class="tablink" onclick="openPage('cc',this)">商品評價</button>
+   </div>
+
+   <div id="aa" class="tabcontent">
+        <div class="rightimfor">
+            <h1>商品特色</h1>
+            <p>
+                低調的緞面光澤，旁邊的領結修飾了腰身，不需要紮進褲子就能顯比例的一件襯衫！<br>
+            </p>   
+        </div>
+    </div>
+
+    <div id="bb" class="tabcontent">
+        <div class="rightimfor">
+            <h1>付款與運送</h1>
+            <h2>付款方式</h2>
+            <p>
+                超商貨到付款<br>
+                信用卡付款<br>
+                LINE Pay <br>
+
+            <h2>運送方式</h2>
+            <p>
+                全家取貨付款，每筆NT$60，滿NT$3500(含以上)免運費<br>
+                7-11取貨付款，每筆NT$60，滿NT$3500(含以上)免運費<br>
+            </p>
+        </div>	
+    </div>
+
+    <div id="cc" class="tabcontent">
+        <div class="pic" style="margin-top:20px;text-align:left">					
+            <div class="apple">
+            <h1 >4.8/5</h1>
+            <p>共2則評論</p>
+            </div>			
+            
+            <ul class="starul">
+                <li>★★★★★<b>(1)</b></li>
+                <li>★★★★☆<b>(1)</b></li>
+                <li>★★★☆☆<b>(0)</b></li>
+                <li>★★☆☆☆<b>(0)</b></li>
+                <li>★☆☆☆☆<b>(0)</b></li>
+            </ul>
+            <button type="button" class="reviwe" onclick="rew_show()">撰寫評論</button>
+                
+    
+                <div id="rew_write" class="rew_writeclass">
+                       <form style="padding:5px 20px 10px 30px">
+    
+                    <label >姓名</label>
+                    <input type="retext" readonly> 
+                
+                    
+                    <label style="display:inline-block;margin-left:450px">評分</label>
+                    <ul id="star">
+                        <li>★</li>
+                        <li>★</li>
+                        <li>★</li>
+                        <li>★</li>
+                        <li>★</li>
+                    </ul>
+                    <div style="display:inline-block;margin-left:15px">
+                        <div id="star_word"></div>
+                    </div>
+                    
+                 
+                    <br>
+                    <label style="margin-top:10px">標題</label>
+                    <input type="retext" style="width:40%" placeholder="20字以內" maxlength="20" required> 
+                    <br>
+    
+                    <label style="position:relative;top:-80px">內容</label>
+                    
+                    <textarea style="width:70%;height:100px;margin-top:10px"placeholder="250字以內" maxlength="250" required></textarea>
+                    <button type="submit" class="rewpost">送出</button>
+                    
+                  </form>
+                   </div>
+                   <hr style="margin-top:10px">   
+    
+                <div class="rew">
+                    <img src="images/beaky.jpg" class="rewpic">
+                    <ul class="rewul">
+                        <li>Beaky</li>
+                        <li>安生</li>
+                        <li>★★★★☆</li>
+                    </ul>
+                    <div class="rewtxt">
+                        <h4>錢包空空</h4>
+                        <p>Serene的衣服都好有質感！但價格好貴qq</p>
+                    </div>
+                    <p class="time">2021/01/09</p>
+                </div>
+                <div class="rew">
+                    <img src="images/sherry.jpg" class="rewpic">
+                    <ul class="rewul">
+                        <li>Sherry</li>
+                        <li>安生</li>
+                        <li>★★★★★</li>
+                    </ul>
+                    <div class="rewtxt">
+                        <h4>我愛Serene</h4>
+                        <p>我要買爆！！！真的太好看了！！</p>
+                    </div>
+                    <p class="time">2021/01/09</p>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+    <div class="web2">
+        <a href="index.html">
+            <img src="images/logo1.PNG" alt="" >
+        </a>
+    </div>
+
+    <nav class="navbtn2">
+        <div class="item1">
+           <h3>關於我們</h3> 
+            <a href="story.html">品牌故事</a>
+        </div>
+        <div class="item2">
+          <h3>購物說明</h3>  
+            <a href="Process.html">購物流程</a>
+        </div>
+        <div class="item3">
+           <h3>服務資訊</h3> 
+           <a href="member.html">聯絡我們</a>
+        </div>    
+    </nav>
+
+
+    <div class="navphoto2">
+       <a href="https://instagram.com/serenevitale?igshid=1f8jgvktgckd6"><img src="images/ig.png" alt=""></a>
+       <a href="mailto:serene.vitale@gmail.com?subject=與我聯絡"><img src="images/mail.png" alt=""></a>	
+       <a href="https://www.youtube.com/channel/UCgbscTZz8BHUUCtuXZJLcaA/featured"><img src="images/yt.png" alt=""></a>
+        
+        
+        
+    </div>
+    <button onclick="topFunction()" id="myBtn">Top</button>
+</div>
+<div class="co">copyright&copy;Group21 2021</div> 
+<script>
+    function shopping(){
+        alert("已成功加入購物車清單");
+    }
+</script>
+<script src="assets/js/produce.js"></script>
+<script src="assets/js/Top.js"></script>
+<script src="assets/js/Form.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/star.js"></script>
+</body>
+</html>
