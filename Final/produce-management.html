@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene X 承包你的衣櫥後台</title>
+    <link href="assets/css/produce-management.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="web">
+            <a href="index2.html">
+                <img src="images/logo1.PNG" alt="" >
+            </a>
+        </div>
+
+        <nav class="navbtn">
+            <a href="produce-management.html">produce</a>
+            <a href="member-management.html">member</a>
+            <a href="finish-management.html">finish</a>
+            <a href="message-management.html">message</a>
+        </nav>
+
+        <div class="two">
+            <div class="navex">
+                <form class="example" action="/PHP_Form.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><img src="images/搜尋.jpg" alt=""></button>
+                </form>
+            </div>
+            <div class="navphoto">
+              <a href="login.html"><img src="images/person.png" alt=""></a>
+              <button class="openBtn" onclick="openSearch()"><img src="images/mes.png" alt=""></button>
+              <a href="heart.html"><img src="images/heart.png" alt=""></a>
+              <a href="shopping.html"><img src="images/shopping.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="myOverlay" class="overlay" style="background: url(images/0-10.jpg); background-repeat: no-repeat; background-size: cover;">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form  class="form-container" action="">
+                    <label for="msg"><h1><b>Message</b></h1></label>
+                    <textarea placeholder="Welcome message" name="msg" required></textarea>
+                    <div class="btnbtw">
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+      </div>
+    
+
+
+
+
+<div class="all">
+
+    <button class="tablink" onclick="openPage('all',this,'#819582')"id="defaultOpen">ALL</button>
+    <button class="tablink" onclick="openPage('new',this,'#DDB7AB')" >NEW</button>
+    <button class="tablink" onclick="openPage('hot',this,'#a19f89')">HOT</button>
+    <button class="tablink" onclick="openPage('sale', this,'#729598')">SALE</button>
+
+<div id="all" class="tabcontent">
+    <div class="Goods">
+        <div class="right">
+    
+            <div class="rightmenu">
+                <div class="menuh">
+                    <h2>商品分類</h2>
+                </div>
+            
+                <div class="menu1">
+                    <button class="accordion"><a href="#1">上衣身</a> 
+                        <img src="images/箭頭向下.jpg" alt="">
+                    </button>
+                    <div class="panel">
+                        <a href="#1-1">安生</a><br>
+                        <a href="#1-2">七月</a><br>
+                        <a href="#1-3">清平調</a><br>
+                        <a href="#1-4">小露營</a><br>
+                        <a href="#1-5">捲簾人</a><br>
+                        <a href="#1-6">哈克隆</a><br>
+                        <a href="#1-7">薄荷奶油</a><br>
+                        <a href="#1-8">午睡妖精</a><br>
+                        <a href="#1-9">亨利八世</a><br>
+                        <a href="#1-10">草地女王</a><br>
+                        <a href="#1-11">玻璃絲襪(短襯衫)</a><br>
+                        <a href="#1-12">玻璃絲襪(長襯衫)</a><br>
+                    </div>
+                </div>
+    
+                <div class="menu1">
+                    <button class="accordion"><a href="#2">下衣身</a> 
+                        <img src="images/箭頭向下.jpg" alt="">
+                    </button>
+                    <div class="panel">
+                        <a href="#2-1">下北澤</a><br>
+                        <a href="#2-2">白月光</a><br>
+                        <a href="#2-3">朱砂痣</a><br>
+                        <a href="#2-4">聖誕櫥窗</a><br>
+                        <a href="#2-5">星空墨水</a><br>
+                        <a href="#2-6">寄宿學院</a><br>
+                        <a href="#2-7">晨間主播</a><br>
+                        <a href="#2-8">芝麻奶酪</a><br>
+                        <a href="#2-9">Moon River</a><br>
+                    </div>
+                </div>
+    
+                <div class="menu1">    
+                    <button class="accordion"><a href="#3">外套</a> 
+                        <img src="images/箭頭向下.jpg" alt="">
+                    </button>
+                    <div class="panel">
+                        <a href="#3-1">調香師</a><br>
+                        <a href="#3-2">代官山</a><br>
+                        <a href="#3-3">湖畔小屋</a><br>
+                        <a href="#3-4">柏林少女</a><br>
+                        <a href="#3-5">名媛教育</a><br>
+                        <a href="#3-6">雪國童話</a><br>
+                        <a href="#3-7">模仿遊戲</a><br>
+                        <a href="#3-8">可甜可鹽</a><br>
+                        <a href="#3-9">早安紐約</a><br>
+                    </div>
+                </div>
+                
+                <div class="menu1">
+                    <button class="accordion"><a href="#4">洋裝</a> 
+                        <img src="images/箭頭向下.jpg" alt="">
+                    </button>
+                    <div class="panel">
+                        <a href="#4-1">水手故事</a><br>
+                        <a href="#4-2">北非諜影</a><br>
+                        <a href="#4-3">藍莓優格</a><br>
+                        <a href="#4-4">末路狂花</a><br>
+                        <a href="#4-5">唐頓洋裝</a><br>
+                        <a href="#4-6">黑影家族</a><br>
+                    </div>
+                </div>
+                
+                <div class="menu1">
+                    <button class="accordion"><a href="#5">配件</a> 
+                        <img src="images/箭頭向下.jpg" alt="">
+                    </button>
+                    <div class="panel">
+                        <a href="#5-1">桂冠花圈</a><br>
+                        <a href="#5-2">橄欖花圈</a><br>
+                        <a href="#5-3">普普藝術</a><br>
+                        <a href="#5-4">皮膚遊戲</a><br>
+                        <a href="#5-5">珍珠航線</a><br>
+                        <a href="#5-6">沿海地帶</a><br>
+                        <a href="#5-7">皮革綁帶</a><br>
+                        <a href="#5-8">竹編凱莉</a><br>
+                        <a href="#5-9">時空旅人</a><br>
+                        <a href="#5-10">雪松包</a><br>
+                        <a href="#5-11">賈桂林</a><br>
+                        <a href="#5-12">向尾貓</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="left">
+            <div class="theme">
+                <div class="theme1">
+                    <a id="1" style="margin-top: 5%;"><h1>上衣身</h1></a>  
+                </div>
+                <div class="leftcontent">
+                    <div class="imgtxt">
+                        <a href="produce.html" id="1-1">
+                        <div class="txt">
+                           <img src="images/01/1-1.jpg" alt=""> 
+                            <div class="contain">
+                                <h2>安生</h2>
+                                <h3>NT$1,780 <br></h3></a>
+                                <div class="photo">
+                                    <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                            alt=""></button>
+                                    <button type="submit" class="buy" onclick="shopping()"><img
+                                            src="images/shopping.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="imgtxt">
+                        <div class="txt">
+                            <div class="contain">
+                                    <a href="produce-input.html"><input type="button" class="input-text" value="新增商品"></a>
+                            </div>  
+                        </div> 
+                    </div>
+                    
+                    
+    
+    
+    
+                </div>
+            </div>
+     
+      
+            <div class="theme">
+                <div class="theme1">
+                    <a id="2"><h1>下衣身</h1></a>  
+                </div>
+                <div class="leftcontent">
+    
+                 <div class="imgtxt">
+                        <a href="produce.html" id="1-1">
+                        <div class="txt">
+                            <img src="images/01/1-1.jpg" alt="">
+                            <div class="contain">
+                                <h2>安生</h2>
+                                <del><h3>NT$1,780</h3></del>
+                                <h4>NT$1,480</h4></a>
+                                <div class="photo">
+                                     <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                             alt=""></button>
+                                     <button type="submit" class="buy" onclick="shopping()"><img
+                                             src="images/shopping.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+    
+            <div class="theme">
+                <div class="theme1">
+                    <a id="3"><h1>外套</h1></a>  
+                </div>
+                <div class="leftcontent">
+                   
+                </div>
+            </div>
+        
+            <div class="theme">
+                <div class="theme1">
+                    <a id="4"><h1>洋裝</h1></a>  
+                </div>
+                <div class="leftcontent">
+                   
+                </div>
+            </div> 
+    
+            <div class="theme">
+                <div class="theme1">
+                    <a id="5"><h1>配件</h1></a>  
+                </div>
+                <div class="leftcontent">
+                  
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+
+    <div id="new" class="tabcontent">
+
+        
+<div>
+    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/oZHH1tU6OT8?autoplay=1&mute=1&loop=1&playlist=oZHH1tU6OT8" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  
+
+<div class="Goods2">
+  
+    <div class="left2">
+        <div class="theme2">
+            <div class="theme1-2" style="margin-top: 5%;">
+                <h1>上衣身</h1>
+            </div>
+            
+            <div class="leftcontent2">
+                <div class="imgtxt2">
+                    <a href="produce.html">
+                    <div class="txt2">
+                        <img src="images/01/1-1.jpg" alt="">
+                        <div class="contain2">
+                            <h2> 安生</h2>
+                            <h3>NT$1,780 <br></h3>
+                            <h4>介紹</h4><br>
+                            <p>低調的緞面光澤，旁邊的領結修飾了腰身，不需要紮進褲子就能顯比例的一件襯衫！</p></a>
+                            <div class="photo2">
+                                <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                        alt=""></button>
+                                <button type="submit" class="buy" onclick="shopping()"><img src="images/shopping.png"
+                                        alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="imgtxt2">
+                    <div class="txt2">
+                        <div class="contain2">
+                                <a href="produce-input.html"><input type="button" class="input-text2" value="新增商品"></a>
+                        </div>  
+                    </div> 
+                </div>
+
+            </div>
+        </div> 
+
+        <div class="theme2">
+            <div class="theme1-2">
+                <h1>下衣身</h1>
+            </div>
+            
+            <div class="leftcontent2">
+                
+            </div>
+        </div>
+
+        <div class="theme2">
+            <div class="theme1-2">
+                <h1>外套</h1>
+            </div>
+            
+            <div class="leftcontent2">
+                
+            </div>
+        </div>
+
+        <div class="theme2">
+            <div class="theme1-2">
+                <h1>裙子</h1>
+            </div>
+            
+            <div class="leftcontent2">
+               
+            </div>
+        </div>
+
+        <div class="theme2">
+            <div class="theme1-2">
+                <h1>配件</h1>
+            </div>
+            
+            <div class="leftcontent2">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div id="hot" class="tabcontent">
+
+        <div class="Goods">
+  
+            <div class="left">
+                <div class="theme1" style="margin-top: 5%;">
+                    <h1>熱銷排行Top12</h1>
+                </div>
+                 
+                <div class="leftcontent">
+                 
+                    <div class="imgtxt">
+                        <a href="produce.html">
+                        <div class="txt">
+                            <img src="images/01/1-1.jpg" alt="" style="width:100% ;height: 350px;">
+                            <div class="contain3">
+                                <h2> 安生</h2>
+                                <h3>NT$1,780 <br></h3> 
+                                <p>銷售量:200</p></a>
+                                <div class="photo">
+                                     <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                             alt=""></button>
+                                     <button type="submit" class="buy" onclick="shopping()"><img
+                                             src="images/shopping.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="imgtxt">
+                        <div class="txt">
+                            <div class="contain">
+                                    <a href="produce-input.html"><input type="button" class="input-text" value="新增商品"></a>
+                            </div>  
+                        </div> 
+                    </div>
+        
+               
+                </div>
+            </div> 
+        </div>
+            <div class="upT">
+                <div class="upleft">
+                    <img src="images/25.jpg" alt="">
+                </div>
+                <div class="upright">
+                    <img src="images/26.jpg" alt=""> 
+                </div>
+            </div> 
+
+
+    </div>
+
+
+ 
+
+    <div id="sale" class="tabcontent">
+        <div class="Goods">
+  
+        
+            <div class="left">
+                <div class="theme">
+                    <div class="theme1">
+                        <a id="1" style="margin-top: 5%;"><h1>超值折扣</h1></a>
+                    </div>
+                    <div class="leftcontent">
+                        <div class="imgtxt">
+                            <a href="produce.html" id="1-1">
+                            <div class="txt">
+                                <img src="images/01/1-1.jpg" alt="">
+                                <div class="contain">
+                                    <h2>安生</h2>
+                                    <del><h3>NT$1,780</h3></del>
+                                    <h4>NT$1,480</h4></a>
+                                    <div class="photo">
+                                        <button type="submit" class="buy" onclick="heart()"><img src="images/heart.png"
+                                                alt=""></button>
+                                        <button type="submit" class="buy" onclick="shopping()"><img
+                                                src="images/shopping.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+
+
+                        <div class="imgtxt">
+                            <div class="txt">
+                                <div class="contain">
+                                        <a href="produce-input.html"><input type="button" class="input-text" value="新增商品"></a>
+                                </div>  
+                            </div> 
+                        </div>
+        
+        
+                       
+        
+                    </div>
+                </div>
+        
+                
+        
+                
+        
+                
+        
+                
+            
+            </div> 
+        </div>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="web2">
+        <a href="index2.html">
+            <img src="images/logo1.PNG" alt="" >
+        </a>
+    </div>
+
+    <nav class="navbtn2">
+        <div class="item1">
+           <h3>關於我們</h3> 
+            <a href="story.html">品牌故事</a>
+        </div>
+        <div class="item2">
+          <h3>購物說明</h3>  
+            <a href="Process.html">購物流程</a>
+        </div>
+        <div class="item3">
+           <h3>服務資訊</h3> 
+           <a href="member.html">聯絡我們</a>
+        </div>    
+    </nav>
+
+
+    <div class="navphoto2">
+        <a href="https://instagram.com/serenevitale?igshid=1f8jgvktgckd6" target="_blank"><img src="images/ig.png" alt=""></a>
+        <a href="mailto:serene.vitale@gmail.com?subject=與我聯絡"><img src="images/mail.png" alt=""></a>	
+        <a href="https://www.youtube.com/channel/UCgbscTZz8BHUUCtuXZJLcaA/featured" target="_blank"><img src="images/yt.png" alt=""></a>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn">Top</button>
+</div>
+
+<div class="co">copyright&copy;Group21 2021</div> 
+<script>
+    function heart() {
+        alert("已成功加入追蹤清單");
+    }
+
+    function shopping() {
+        alert("已成功加入購物車清單");
+    }
+</script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/Top.js"></script>
+<script src="assets/js/Form.js"></script>
+
+</body>
+</html>
