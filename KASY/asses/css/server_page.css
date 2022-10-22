@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#left {
+  background-color: #CCDBE2;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 100%;
+}
+
+#photo {
+  border-radius: 40px;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+hr {
+  height: 0px;
+  width: 248px;
+}
+
+#content-left {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+#content-select {
+  background-color: #BFC8D7;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.h {
+  transition: 0.3s;
+  width: 50%;
+  color: black;
+}
+
+.h:hover {
+  background-color: #909FA6;
+  border-radius: 10px;
+  width: 50%;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../image/bg.png);
+  background-size: 100% auto;
+
+}
+
+#server {
+  width: 900px;
+  height: 420px;
+  margin-left: 450px;
+  margin-top: 150px;
+  border-radius: 10px;
+}
+
+.select-buttom {
+  margin-top: 80px;
+  text-align: center;
+  background-color: #BFC8D7;
+
+}
+
+#serverout {
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #BFC8D7;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#serverout:hover {
+  border: 3px #909FA6 solid;
+  background-color: #EDEEF0;
+  border-radius: 10px;
+}
