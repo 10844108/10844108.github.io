@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../asset/css/header_footer.css">
+  <link rel="stylesheet" href="../asset/css/products_detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Document</title>
+
+</head>
+
+<body>
+  <!--header開始-->
+  <div class="header">
+    <div class="guide">
+      <a href="index.html" alt="">
+        <img src="../asset/image/logo.jpg">
+      </a>
+    </div>
+
+
+
+    <form id="content">
+      <input type="text" name="input" class="input1" id="search-input">
+      <button type="reset" class="search" id="search-btn"></button>
+    </form>
+
+
+    <div class="slogan">
+
+
+      <h1><span>Have me.</span><br><br> <span>Have a lovely life.</span></h1>
+    </div>
+
+
+
+    <div class="guide_icon">
+      <div class="guide_linkicon">
+        <div class=tooltip2><a href="login.html"><img src="../asset/image/person.png" alt=""></a>
+        <span class="tooltiptext2">登入/註冊</span></div>
+        <div class=tooltip2><a href="index.html"><img src="../asset/image/home.png" alt=""></a>
+        <span class="tooltiptext2">首頁</span></div>
+        <div class=tooltip2><a href="product.html"><img src="../asset/image/store.png" alt=""></a>
+        <span class="tooltiptext2">商品總覽</span></div>
+        <div class=tooltip2><a href="shopping.html"><img src="../asset/image/shopping.png" alt=""></a>
+        <span class="tooltiptext2">購物車</span></div>
+      </div>
+    </div>
+  </div>
+<!--header結束-->
+
+
+
+  <div>
+    <h1 class="btn_top">商品介紹</h1>
+
+    <!-- The four columns -->
+    <div class="goods">
+
+      <div class="container4">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="../asset/image/pot1.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="../asset/image/pot1-2.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="../asset/image/pot1-3.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="../asset/image/pot1-4.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="../asset/image/pot1-5.jpg">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <!--<div class="caption-container">
+        <p id="caption"></p>
+        </div>-->
+      <br>
+      <div class="row4">
+        <div class="column4">
+          <img class="demo_cursor" src="../asset/image/pot1.jpg" onclick="currentSlide(1)" alt="1">
+        </div>
+        <div class="column4">
+          <img class="demo_cursor" src="../asset/image/pot1-2.jpg" onclick="currentSlide(2)" alt="2">
+        </div>
+        <div class="column4">
+          <img class="demo_cursor" src="../asset/image/pot1-3.jpg" onclick="currentSlide(3)" alt="3">
+        </div>
+        <div class="column4">
+          <img class="demo_cursor" src="../asset/image/pot1-4.jpg" onclick="currentSlide(4)" alt="4">
+        </div>
+        <div class="column4">
+          <img class="demo_cursor" src="../asset/image/pot1-5.jpg" onclick="currentSlide(5)" alt="5">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="goods_info">
+
+    <div class="row5">
+      <div class="column5">
+        <div class="card">
+          <h2>雙魚戲荷琺瑯鑄鐵媽咪鍋(加勒比海藍-鋼頭)</h2>
+          <hr style="height:8px;" color="pink" width="95%"><br>
+          <p style="font-size: 20px; font-style:italic; font-weight: bold;">
+          
+          使用吉祥的荷花與鯉魚圖案，貼花皆由工藝師手工一步一步貼製，再高溫燒製固定顏色及花紋，完美展現品牌精湛的工藝技術與設計之美。</p><br>
+          
+          <p><span class="price" style="color: red; font-size:24px;">NT$ 13,000.00</span></p><br>
+          <p><span class="price" style="font-size:22px; background: rgb(206, 181, 181);" >尺寸</span>&nbsp;&nbsp;22 cm</p><br>
+          <p><span class="price" style="font-size:22px; background: rgb(206, 181, 181);">顏色</span>&nbsp;&nbsp;<button class="glow-on-hover">雙魚戲荷加勒比海藍</button></p><br>
+          <p><span class="price" style="font-size:22px; background: rgb(206, 181, 181);">數量</span>&nbsp;&nbsp;
+          <select>
+            <option>請選擇數量</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select></p><br>
+        <p><span class="price" style="font-size:22px; background: rgb(206, 181, 181);" >庫存數量:</span>&nbsp;&nbsp;23</p><br>
+          <hr style="height:2px" color="rgb(197, 175, 159)" width="95%"><br>
+          <div class=" ck_btn" style="margin-left: 23%;">
+            
+            <button class="cart" style="align-items: center; font-size: 20px; letter-spacing: 2px;" onclick="addshoppingcart()"><img
+                src="../asset/image/shopping.png" style="width: 30px;" height="25px;">加入購物車</button>
+            <button class="myfavorite" style="align-items: center; font-size: 20px; letter-spacing: 2px;" onclick="addheart()"><img
+                src="../asset/image/heart.png" style="width: 30px;" height="25px;">加入收藏</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="some_op">
+
+
+
+    <button class="accordion">商品資訊</button>
+    <div class="panel">
+      <p>
+        <div class="alert_info">
+          🔎導熱迅速且均勻。<br>
+          🔎厚重的蓋子不易使蒸氣流失，鎖住美味及營養。<br>
+          🔎琺瑯容易清潔，色澤外型美觀亮麗。<br>
+          🔎耐高溫且適應各種烹調方式。<br>
+
+        </div>
+      </p>
+    </div>
+
+    <button class="accordion">商品規格</button>
+    <div class="panel">
+      <p>
+        <span class="info_name">品名: &nbsp;</span>琺瑯鑄鐵媽咪鍋 22cm<br>
+        <span class="info_name">直徑(含柄): &nbsp;</span>22cm(30.3)cm<br>
+        <span class="info_name">高度(含蓋): &nbsp;</span>9.0cm(12.9)cm<br>
+        <span class="info_name">容量: &nbsp;</span>2.6L<br>
+        <span class="info_name"> 重量: &nbsp;</span>3.4kg<br></p>
+    </div>
+
+    <button class="accordion">適用器具</button>
+    <div class="panel">
+      <p class="alert_info">
+        <img src="../asset/image/fire2.png" style="width: 30px;height:12%;">瓦斯爐<br>
+        <img src="../asset/image/elec2.png" style="width: 30px;height:12%;">電磁爐<br>
+        <img src="../asset/image/hotbox2.png" style="width: 30px;height: 12%;">烤箱<br></p>
+    </div>
+
+
+
+  </div>
+
+
+
+<!--點"撰寫評論"會跑出新視窗"-->
+<div>
+
+  <button class="tooltip" onclick="document.getElementById('id02').style.display='block'"  >撰寫評論
+    <span class="tooltiptext">點我寫評論!</span>
+
+  </button>
+ 
+
+  
+
+  <div id="id02" class="modal">
+
+      <form class="modal-content animate" action="" method="post">
+          <fieldset class="data">
+            <h1>留言板<br>
+              <span style="font-size: 15px;">留下對於產品的看法吧!</span>
+            </h1>
+              <div class="box">
+                <div class="form2">
+                  <span>姓名 :</span>
+                  <input type="text" name="name" class="error" placeholder="請輸入您的姓名" required />
+                  <div class="error-msg"></div>
+                </div>
+            
+                <div class="form2">
+                  <span>郵箱 :</span>
+                  <input  type="email" value="" name="email" placeholder="請輸入郵箱地址" required />
+                  <div class="error-msg"></div>
+                </div>
+            
+                <div class="form2">
+                  <span>商品名稱 :</span>
+            
+                  <select name="product" required>
+                    <option value="" style="font-size: 20px; font-weight: bold;">琺瑯鑄鐵鍋具</option>
+                    <option value="">雙魚戲荷琺瑯鑄鐵媽咪鍋22cm</option>
+                    <option value="">典藏琺瑯鑄鐵圓鍋</option>
+                    <option value="">典藏琺瑯鑄鐵媽咪鍋</option>
+                    <option value="">萬用窈窕琺瑯鑄鐵鍋</option>
+                    <option value="">典藏琺瑯鑄鐵慢燉鍋</option>
+                    <option value="">典藏琺瑯圓鐵鍋</option>
+                    <option value="">琺瑯鑄鐵山茶花鍋</option>
+                    <option value="" style="font-size: 20px; font-weight: bold;">造型瓷器
+                    </option>
+                    <option value="">珠光薔薇英式午茶杯</option>
+                    <option value="">日式清酒壺組</option>
+                    <option value="">珠光薔薇花瓶500ml</option>
+                    <option value="">韓式飯碗</option>
+                    <option value="">深圓盤</option>
+                    <option value="">蛋蛋馬克杯</option>
+                    <option value="">花蕾系列心型盤4入</option>
+                    <option value="">新采和風系列湯匙2入</option>
+                    <option value="">花型盤附中式湯匙</option>
+                    <option value="" style="font-size: 20px; font-weight: bold;">調理配件
+                    </option>
+                    <option value="">法式隔熱墊</option>
+                    <option value="">V鏟杓</option>
+                    <option value="">不鏽鋼矽膠餐夾</option>
+                    <option value="">南瓜鏟</option>
+                    <option value="">鍋耳防燙握把2入</option>
+                    <option value="">長形烤盤</option>
+                    <option value="">楓木砧板</option>
+                    <option value="">鍋把套</option>
+                    <option value="">南瓜鏟</option>
+                  </select>
+                  <div class="error-msg"></div>
+                </div>
+                <div class="form2">
+                  <span>評價</span>
+                  <div class="star">
+                    <input type="radio" name="item" id="item01" checked /><!--这里设置checked初始状态-->
+                <label class="star-item" for="item01" title=""></label>
+                <input type="radio" name="item" id="item02" />
+                <label class="star-item" for="item02" title=""></label>
+                <input type="radio" name="item" id="item03" />
+                <label class="star-item" for="item03" title=""></label>
+                <input type="radio" name="item" id="item04" />
+                <label class="star-item" for="item04" title=""></label>
+                <input type="radio" name="item" id="item05" />
+                <label class="star-item" for="item05" title=""></label>
+              </div>
+                  <br>
+                
+                </div>
+                <div class="form2">
+                  <span>主旨 :</span>
+                  <input  type="text" name="subject" class="error" placeholder="請輸入評論主旨" />
+                  <div class="error-msg"></div>
+                </div>
+            
+                <div class="form2">
+                  <span>留言 :</span>
+                  <textarea  type="text" name="message" placeholder="請輸入你的建議"></textarea>
+                  <div class="error-msg"></div>
+                </div>
+                <div class="success-msg"></div>
+              </div>
+              <div class="box">
+                  <button class="submit-button" type="submit">送出</button>
+                  <button class="submit-button"
+                      onclick="document.getElementById('id02').style.display='none'">取消</button>
+              </div>
+          </fieldset>
+      </form>
+  </div>
+
+
+ </div> <div class="heading1">
+    <span class="heading">顧客評論</span>
+
+   
+</div>
+    <p style="margin: 3px;padding: 2px;font-size: 20px;font-weight: bold;">
+      評價 &nbsp;4.5 &nbsp; (共計 2 則評論)</p>
+      
+      <div class="star">
+        <input type="radio" name="item" id="item01" checked /><!--这里设置checked初始状态-->
+    <label class="star-item" for="item01" title="1/5"></label>
+    <input type="radio" name="item" id="item02" />
+    <label class="star-item" for="item02" title="2/5"></label>
+    <input type="radio" name="item" id="item03" />
+    <label class="star-item" for="item03" title="3/5"></label>
+    <input type="radio" name="item" id="item04" />
+    <label class="star-item" for="item04" title="4/5"></label>
+    <input type="radio" name="item" id="item05" />
+    <label class="star-item" for="item05" title="5/5"></label>
+     
+  </div>
+  <hr style="border:3px solid #f1f1f1">
+
+  <div class="roww">
+    <div class="side">
+      <div>5 star</div>
+    </div>
+    <div class="middle">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+    </div>
+    <div class="side right">
+      <div>(1)</div>
+    </div>
+    <div class="side">
+      <div>4 star</div>
+    </div>
+    <div class="middle">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+    </div>
+    <div class="side right">
+      <div>(1)</div>
+    </div>
+    <div class="side">
+      <div>3 star</div>
+    </div>
+    <div class="middle">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+
+    </div>
+    <div class="side right">
+      <div>(0)</div>
+    </div>
+    <div class="side">
+      <div>2 star</div>
+    </div>
+    <div class="middle">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+    </div>
+    <div class="side right">
+      <div>(0)</div>
+    </div>
+    <div class="side">
+      <div>1 star</div>
+    </div>
+    <div class="middle">
+      <span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+    </div>
+    <div class="side right">
+      <div>(0)</div>
+    </div>
+  </div>
+
+
+</div>
+<!--商品評論-->
+
+
+<div class="container_comment">
+  <img src="../asset/image/head1.jpg" alt="" style="width:90px">
+  <p><span class="comment_name" style="font-size: 25px;">劉淳淳</span> 
+    <div class="star">
+      <input type="radio" name="item" id="item01" checked /><!--这里设置checked初始状态-->
+  <label class="star-item" for="item01" title="1/5"></label>
+  <input type="radio" name="item" id="item02" />
+  <label class="star-item" for="item02" title="2/5"></label>
+  <input type="radio" name="item" id="item03" />
+  <label class="star-item" for="item03" title="3/5"></label>
+  <input type="radio" name="item" id="item04" />
+  <label class="star-item" for="item04" title="4/5"></label>
+  <input type="radio" name="item" id="item05" />
+  <label class="star-item" for="item05" title="5/5"></label>
+</div>
+  
+
+  </p>
+  <br><p span class="comment_content" >買這個鍋子後我每次煮飯都像個貴婦，超讚的啦!!</p>
+</div>
+
+<div class="container_comment">
+  <img src="../asset/image/head2.jpg" alt="" style="width:90px">
+  <p><span class="comment_name" style="font-size: 25px;" >翁小媛</span>
+    <div class="star">
+      <input type="radio" name="item" id="item01" checked /><!--这里设置checked初始状态-->
+  <label class="star-item" for="item01" title="1/5"></label>
+  <input type="radio" name="item" id="item02" />
+  <label class="star-item" for="item02" title="2/5"></label>
+  <input type="radio" name="item" id="item03" />
+  <label class="star-item" for="item03" title="3/5"></label>
+  <input type="radio" name="item" id="item04" />
+  <label class="star-item" for="item04" title="4/5"></label>
+  <input type="radio" name="item" id="item05" />
+  <label class="star-item" for="item05" title="5/5"></label>
+</div></p>
+  <br><p span class="comment_content" >鍋子超好用的啦!!超適合在家煮飯打卡!</p>
+</div>
+
+ <!--Footer開始-->
+<div class="footer">
+
+
+
+
+   
+  <!--會漂浮的問號:按了可以寄信-->
+      <a href="mailto:xw789025@gmail.com"><div id="chat" class="animated-chat tada" >?</div></a>
+      <!--漂浮小問號結束-->
+      <!--後端的計數器-->
+      
+      <div class="copyright">copyright&copy;KASY 2021<br>拜訪人數:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</div>
+     <!--最下面的連結區開始-->
+      <nav class="navbtn2">
+        <div class="item1">
+          <a href="story.html"><h3>關於我們</h3></a>
+  
+        </div>
+        <div class="item2">
+          <a href="Process.html"><h3>常見問題</h3></a>
+  
+        </div>
+        
+       
+      </nav> <!--最下面的連結區結束-->
+      <!--到TOP的按鈕開始-->
+      <button onclick="topFunction()" id="topBtn">
+        <img src="../asset/image/top.png">
+      </button>
+    </div>
+  
+  
+  
+  <!--到TOP的按鈕結束-->
+
+
+  <script src="../asset/js/search.js"></script>
+  <script src="../asset/js/searchfunction.js"></script>
+  <script src="../asset/js/top.js"></script>
+  <script src="../asset/js/productslide;.js"></script>
+  <script src="../asset/js/productinfo.js"></script>
+  <script src="../asset/js/open_comment.js"></script>
+  <script src="../asset/js/addheart.js"></script>
+  <script src="../asset/js/addshoppingcart.js"></script>
+
+
+
+
+
+</body>
+
+</html>

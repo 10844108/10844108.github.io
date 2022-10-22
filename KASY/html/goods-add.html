@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../asset/css/server_page.css">
+    <link rel="stylesheet" href="../asset/css/goods_add.css">
+    <title>Goods_Add</title>
+</head>
+
+<body>
+
+    <div id="left">
+        <div id="content-left">
+
+            <a href="server_page.html"><img src="../asset/image/logo.jpg" width="150px" height="140px" id="photo"></a>
+            <br>
+            <!--管理者ID-->
+            <center>KASY0000</center>
+            <br>
+            <hr>
+            <div id="content-select">
+                <br>
+                <center>
+                    <p class="h"><a href="server_member.html">會員管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="server_order.html">訂單管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="goods-all.html">商品管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="goods-add.html">商品新增</a></p>
+                </center>
+                <br>
+            </div>
+            <hr>
+            <div class="select-buttom">
+                <form method="POST" action="">
+                    <hr>
+                    <button type="submit" id="serverout">登出</button>
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="right" style="height: 720px; width: 100%;">
+        <div id="add">
+            <div id="all">
+                <form method="POST" action="">
+                    <center>
+                        <h2>商品新增</h2>
+                    </center>
+                    <h3>商品名稱：<input type="text" required></h3><br>
+                    <h3>圖片：<br><br><input type="file" required></h3><br>
+                    <h3><input type="file"></h3><br>
+                    <h3><input type="file"></h3><br>
+                    <h3><input type="file"></h3><br>
+                    <h3><input type="file"></h3><br>
+                    <h3>商品介紹：<input type="text" required></h3><br>
+                    <h3>價格：<input type="text" required></h3><br>
+                    <h3>尺寸：<input type="text" required></h3><br>
+                    <h3>數量：<input type="text" required></h3><br>
+                    <h3>類別：
+                        <select>
+                            <option>鑄鐵鍋系列</option>
+                            <option>造型陶器</option>
+                            <option>調理配件</option>
+                        </select>
+                    </h3><br>
+                    <h3>商品資訊：<input type="text" required></h3><br>
+                    <h3>商品規格：<input type="text" required></h3><br>
+                    <h3>適用器具：<input type="text" required></h3><br>
+                    <center>
+                        <button id="add-button" type="submit">增加</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

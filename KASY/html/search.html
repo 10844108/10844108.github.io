@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../asset/css/header_footer.css">
+  <link rel="stylesheet" href="../asset/css/search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+   <!--header開始-->
+   <div class="header">
+    <div class="guide">
+      <a href="index.html" alt="">
+        <img src="../asset/image/logo.jpg">
+      </a>
+    </div>
+
+
+
+    <form id="content">
+      <input type="text" name="input" class="input1" id="search-input">
+      <button type="reset" class="search" id="search-btn"></button>
+    </form>
+
+
+    <div class="slogan">
+
+
+      <h1><span>Have me.</span><br><br> <span>Have a lovely life.</span></h1>
+    </div>
+
+
+
+    <div class="guide_icon">
+      <div class="guide_linkicon">
+        <div class=tooltip2><a href="login.html"><img src="../asset/image/person.png" alt=""></a>
+        <span class="tooltiptext2">登入/註冊</span></div>
+        <div class=tooltip2><a href="index.html"><img src="../asset/image/home.png" alt=""></a>
+        <span class="tooltiptext2">首頁</span></div>
+        <div class=tooltip2><a href="product.html"><img src="../asset/image/store.png" alt=""></a>
+        <span class="tooltiptext2">商品總覽</span></div>
+        <div class=tooltip2><a href="shopping.html"><img src="../asset/image/shopping.png" alt=""></a>
+        <span class="tooltiptext2">購物車</span></div>
+      </div>
+    </div>
+  </div>
+<!--header結束-->
+  
+
+
+  <div>
+    <div class="fli">
+      <h2>以下為"鍋"的搜尋結果</h2>
+
+
+
+      <div class="custom-select" style="width:200px;">
+        <select>
+          <option value="0">自訂篩選</option>
+          <option value="1">價高到低</option>
+          <option value="2">價地到高</option>
+          <option value="3">熱銷推薦</option>
+          <option value="4">我的最愛</option>
+
+        </select>
+      </div>
+    </div>
+
+
+
+    <div id="btnContainer">
+      <button class="btn" onclick="listView()"><i class="fa fa-bars"></i>List</button>
+      <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    </div>
+    <br>
+
+    <div class="row1">
+      <div class="column1">
+        <img src="../asset/image/pot1.jpg" alt="pot" style="width:90px">
+
+        <p><span class="capital">雙魚戲荷琺瑯鑄鐵媽咪鍋</span><br><span class="capital"> NT$ 13,000.00</span></p>
+        <p><span class="capital">顏色:</span>雙魚戲荷/加勒比海藍</p>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <a href="../html/products_detail.html"><button class="button1">點我看更多!</button></a>
+      </div>
+      <div class="column1">
+        <img src="../asset/image/pot2.jpg" alt="pot" style="width:90px">
+        <p><span class="capital">典藏琺瑯鑄鐵圓鍋</span><br><span class="capital"> NT$ 15,000.00</span></p>
+        <p><span class="capital">顏色:</span>野莓金</p>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <button class="button1">點我看更多!</button>
+      </div>
+    </div>
+
+    <div class="row1">
+      <div class="column1">
+        <img src="../asset/image/pot2.jpg" alt="pot" style="width:90px">
+        <p><span class="capital">典藏琺瑯鑄鐵圓鍋</span><br><span class="capital"> NT$ 15,000.00</span></p>
+        <p><span class="capital">顏色:</span>野莓金</p>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <button class="button1">點我看更多!</button>
+      </div>
+      <div class="column1">
+        <img src="../asset/image/pot4.jpg" alt="pot" style="width:90px">
+        <p><span class="capital">萬用窈窕琺瑯鑄鐵鍋</span><br><span class="capital"> NT$ 9,200.00</span></p>
+        <p><span class="capital">顏色:</span>沉靜黑/櫻桃紅/海岸藍/藍鈴紫/迷霧灰</p>
+        <div class="star">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <button class="button1">點我看更多!</button>
+      </div>
+    </div>
+
+
+
+<!--Footer開始-->
+<div class="footer">
+
+
+
+
+   
+  <!--會漂浮的問號:按了可以寄信-->
+      <a href="mailto:xw789025@gmail.com"><div id="chat" class="animated-chat tada" >?</div></a>
+      <!--漂浮小問號結束-->
+      <!--後端的計數器-->
+      
+      <div class="copyright">copyright&copy;KASY 2021<br>拜訪人數:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</div>
+     <!--最下面的連結區開始-->
+      <nav class="navbtn2">
+        <div class="item1">
+          <a href="story.html"><h3>關於我們</h3></a>
+  
+        </div>
+        <div class="item2">
+          <a href="question.html"><h3>常見問題</h3></a>
+  
+        </div>
+        <div class="item3">
+          <a href="https://www.lecreuset.com.tw/l"><h3>關於 LE CREUSET</h3></a>
+  
+        </div>
+       
+      </nav> <!--最下面的連結區結束-->
+      <!--到TOP的按鈕開始-->
+      <button onclick="topFunction()" id="topBtn">
+        <img src="../asset/image/top.png">
+      </button>
+    </div>
+  
+  
+  
+  <!--到TOP的按鈕結束-->
+
+
+
+<script src="../asset/js/search.js"></script>
+  <script src="../asset/js/searchfunction.js"></script>
+  <script src="../asset/js/top.js"></script>
+<script src="../asset/js/searchpage.js"></script>
+<script src="../asset/js/searchpage_diplay.js"></script>
+
+</body>
+
+</html>

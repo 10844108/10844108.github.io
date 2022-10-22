@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/header_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../asset/css/index.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="guide">
+            <a href="index.html" alt="">
+                <img src="../asset/image/logo.jpg">
+            </a>
+        </div>
+
+        <form id="content">
+            <input type="text" name="input" class="input1" id="search-input">
+            <button type="reset" class="search" id="search-btn"></button>
+        </form>
+
+
+
+        <div class="slogan">
+
+
+            <h1><span>Have me.</span><br><br> <span>Have a lovely life.</span></h1>
+        </div>
+
+
+
+        <div class="guide_icon">
+            <div class="guide_linkicon">
+                <div class="tooltip2"><a href="login.html"><img src="../asset/image/person.png" alt=""></a>
+                    <span class="tooltiptext2">登入/註冊</span></div>
+                <div class="tooltip2"><a href="index.html"><img src="../asset/image/home.png" alt=""></a>
+                    <span class="tooltiptext2">首頁</span></div>
+                <div class="tooltip2"><a href="product.html"><img src="../asset/image/store.png" alt=""></a>
+                    <span class="tooltiptext2">商品總覽</span></div>
+                <div class="tooltip2"><a href="shopping.html"><img src="../asset/image/shopping.png" alt=""></a>
+                    <span class="tooltiptext2">購物車</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!--廣告-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="../asset/image/ad1.png" class="photo">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../asset/image/ad3.png" class="photo">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../asset/image/ad2.png" class="photo">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--熱門商品-->
+    <div id="hotbody">
+        <div id="hottop">熱門商品</div>
+        <div id="hot">
+            <div class="inside">
+                <img src="../asset/image/hot.png" class="hotpic">
+                <img src="../asset/image/porcelain1-2-removebg-preview.png" class="pic">
+                <h3>&nbsp; &nbsp;珠光薔薇英式午茶杯</h3>
+            </div>
+            <div class="inside">
+                <img src="../asset/image/hot.png" class="hotpic">
+                <img src="../asset/image/pot1-removebg-preview.png" class="pic">
+                <h3>雙魚戲荷琺瑯鑄鐵媽咪鍋</h3>
+            </div>
+            <div class="inside">
+                <img src="../asset/image/hot.png" class="hotpic">
+                <img src="../asset/image/tool3-removebg-preview.png" class="pic">
+                <h3>&nbsp; &nbsp; &nbsp; &nbsp;不鏽鋼矽膠餐夾</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+
+
+
+        <a href="mailto:xw789025@gmail.com">
+            <div id="chat" class="animated-chat tada">?</div>
+        </a>
+
+        <div class="copyright">copyright&copy;KASY 2021<br>拜訪人數:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</div>
+        <nav class="navbtn2">
+            <div class="item1">
+                <a href="story.html">
+                    <h3>關於我們</h3>
+                </a>
+
+            </div>
+            <div class="item2">
+                <a href="question.html">
+                    <h3>常見問題</h3>
+                </a>
+
+            </div>
+            
+        </nav>
+        <button onclick="topFunction()" id="topBtn">
+            <img src="../asset/image/top.png">
+        </button>
+    </div>
+
+
+    <script src="../asset/js/ad.js"></script>
+    <script src="../asset/js/search.js"></script>
+    <script src="../asset/js/searchfunction.js"></script>
+    <script src="../asset/js/top.js"></script>
+
+</body>
+
+</html>

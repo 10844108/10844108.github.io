@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../asset/css/header_footer.css">
+  <link rel="stylesheet" href="../asset/css/products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+
+
+
+
+</head>
+
+<body>
+  <!--header開始-->
+  <div class="header">
+    <div class="guide">
+      <a href="index.html" alt="">
+        <img src="../asset/image/logo.jpg">
+      </a>
+    </div>
+
+
+
+    <form id="content">
+      <input type="text" name="input" class="input1" id="search-input">
+      <button type="reset" class="search" id="search-btn"></button>
+    </form>
+
+
+    <div class="slogan">
+
+
+      <h1><span>Have me.</span><br><br> <span>Have a lovely life.</span></h1>
+    </div>
+
+
+
+    <div class="guide_icon">
+      <div class="guide_linkicon">
+        <div class=tooltip2><a href="login.html"><img src="../asset/image/person.png" alt=""></a>
+        <span class="tooltiptext2">登入/註冊</span></div>
+        <div class=tooltip2><a href="index.html"><img src="../asset/image/home.png" alt=""></a>
+        <span class="tooltiptext2">首頁</span></div>
+        <div class=tooltip2><a href="product.html"><img src="../asset/image/store.png" alt=""></a>
+        <span class="tooltiptext2">商品總覽</span></div>
+        <div class=tooltip2><a href="shopping.html"><img src="../asset/image/shopping.png" alt=""></a>
+        <span class="tooltiptext2">購物車</span></div>
+      </div>
+    </div>
+  </div>
+<!--header結束-->
+
+
+  <nav>
+    <div id="myBtnContainer">
+      <button class="wei-button2 active" onclick="filterSelection('all')"> 全部商品</button>
+      <button class="wei-button2" onclick="filterSelection('pot')"> 鑄鐵鍋系列</button>
+      <button class="wei-button2" onclick="filterSelection('porcelain')"> 造型陶器</button>
+      <button class="wei-button2" onclick="filterSelection('tool')">調理配件</button>
+
+    </div>
+
+
+    <!--篩選按鈕-->
+
+    <div class="custom-select" style="width:200px;">
+      <select>
+        <option value="0">自訂篩選</option>
+        <option value="1">價高到低</option>
+        <option value="2">價地到高</option>
+        <option value="3">熱銷推薦</option>
+        <option value="4">我的最愛</option>
+
+      </select>
+    </div>
+
+    
+  </nav>
+  <!--商品開始-->
+  <div id="row">
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot1.jpg" alt="pot " style="width:100%">
+        <h4>雙魚戲荷琺瑯鑄鐵媽咪鍋</h4>
+      <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+          <div class="ac-footer-container ac-footer-brand">
+             <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+          </div>
+          
+        </div>
+        <!--小愛心結束-->
+       <p>NT$ 13,000.00</p>
+        <a href="products_detail.html"><button class="button"><span>立即訂購 </span></button></a>
+      </div>
+    </div>
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot2.jpg" alt="pot" style="width:100%">
+
+        <h4>典藏琺瑯鑄鐵圓鍋</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 15,000.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot3-peachyellow.jpg" alt="pot" style="width:100%">
+        <h4>典藏琺瑯鑄鐵媽咪鍋</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 15,000.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot4-cherryred.jpg" alt="pot" style="width:100%">
+        <h4>萬用窈窕琺瑯鑄鐵鍋</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p> NT$ 9,200.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot5-berrypink.jpg" alt="pot " style="width:100%">
+        <h4>典藏琺瑯鑄鐵慢燉鍋</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 15,000.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot6-fireorange.jpg" alt="pot" style="width:100%">
+        <h4>典藏琺瑯圓鐵鍋</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 7,800.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column pot">
+      <div class="content">
+        <img src="../asset/image/pot7-waterblue.jpg" alt="pot" style="width:100%">
+        <h4>琺瑯鑄鐵山茶花鍋</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 13,000.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain1.jpg" alt="porcelain " style="width:100%">
+        <h4>珠光薔薇英式午茶杯</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 980.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain2.jpg" alt="porcelain" style="width:100%">
+        <h4>花蕾系列心型盤4入</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p> NT$ 3,180.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain3.jpg" alt="porcelain" style="width:100%">
+        <h4>珠光薔薇花瓶500ml</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,480.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain4-relaxgreen.jpg" alt="porcelain" style="width:100%">
+        <h4>韓式飯碗</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 880.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain5-relaxgreen.jpg" alt="porcelain" style="width:100%">
+        <h4>深圓盤</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,280.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain6-relaxgreen.jpg" alt="porcelain" style="width:100%">
+        <h4>蛋蛋馬克杯(悠然綠)</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,080.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain7.jpg" alt="porcelain" style="width:100%">
+        <h4>花蕾系列心型盤4入</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 3,180.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain8-relaxgreen.jpg" alt="porcelain" style="width:100%">
+        <h4>新采和風系列湯匙2入</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 980.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column porcelain">
+      <div class="content">
+        <img src="../asset/image/porcelain9-oceanblue.jpg" alt="porcelain" style="width:100%">
+        <h4>花型盤附中式湯匙</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,380.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+
+
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool1-relaxgreen.jpg" alt="tool" style="width:100%">
+        <h4>法式隔熱墊</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 980.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool2-relaxgreen.jpg" alt="tool" style="width:100%">
+        <h4> V鏟杓</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 880.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool3-black.jpg" alt="tool" style="width:100%">
+        <h4>不鏽鋼矽膠餐夾</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,580.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool4-fireorange.jpg" alt="tool" style="width:100%">
+        <h4>南瓜鏟</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 880.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool5-mintgreen.jpg" alt="tool" style="width:100%">
+        <h4>鍋耳防燙握把2入</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,080.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool6-originalblack.jpg" alt="tool" style="width:100%">
+        <h4>長形烤盤</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 1,680.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool7-woods.jpg" alt="tool" style="width:100%">
+        <h4>楓木砧板</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 2,600.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+    <div class="column tool">
+      <div class="content">
+        <img src="../asset/image/tool8-kiwigreen.jpg" alt="tool" style="width:100%">
+        <h4>鍋把套</h4>
+        <!--小愛心可以加入收藏-->
+       <div class="ac-footer">
+       
+        <div class="ac-footer-container ac-footer-brand">
+           <span class="ac-icon ac-icon-love-dark" onclick="addheart()"></span> 
+        </div>
+        
+      </div>
+      <!--小愛心結束-->
+        <p>NT$ 980.00</p>
+        <button class="button"><span>立即訂購 </span></button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!--Footer開始-->
+  <div class="footer">
+
+
+
+
+   
+    <!--會漂浮的問號:按了可以寄信-->
+        <a href="mailto:xw789025@gmail.com"><div id="chat" class="animated-chat tada" >?</div></a>
+        <!--漂浮小問號結束-->
+        <!--後端的計數器-->
+        
+        <div class="copyright">copyright&copy;KASY 2021<br>拜訪人數:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</div>
+       <!--最下面的連結區開始-->
+        <nav class="navbtn2">
+          <div class="item1">
+            <a href="story.html"> <h3>關於我們</h3></a>
+     
+           </div>
+           <div class="item2">
+             <a href="question.html"><h3>常見問題</h3></a>
+     
+           </div>
+          
+         </nav>
+         <button onclick="topFunction()" id="topBtn">
+           <img src="../asset/image/top.png">
+         </button>
+       </div>
+     
+    
+    
+    <!--到TOP的按鈕結束-->
+
+  <script src="../asset/js/search.js"></script>
+  <script src="../asset/js/searchfunction.js"></script>
+  <script src="../asset/js/top.js"></script>
+  <script src="../asset/js/productType.js"></script>
+  <script src="../asset/js/addheart.js"></script>
+
+
+
+
+</body>
+
+</html>

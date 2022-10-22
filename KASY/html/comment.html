@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../asset/css/comment.css">
+  <link rel="stylesheet" href="../asset/css/header_footer.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!--header開始-->
+  <div class="header">
+    <div class="guide">
+      <a href="index.html" alt="">
+        <img src="../asset/image/logo.jpg">
+      </a>
+    </div>
+
+
+
+    <form id="content">
+      <input type="text" name="input" class="input1" id="search-input">
+      <button type="reset" class="search" id="search-btn"></button>
+    </form>
+
+
+    <div class="slogan">
+
+
+      <h1><span>Have me.</span><br><br> <span>Have a lovely life.</span></h1>
+    </div>
+
+
+
+    <div class="guide_icon">
+      <div class="guide_linkicon">
+        <div class=tooltip2><a href="login.html"><img src="../asset/image/person.png" alt=""></a>
+        <span class="tooltiptext2">登入/註冊</span></div>
+        <div class=tooltip2><a href="index.html"><img src="../asset/image/home.png" alt=""></a>
+        <span class="tooltiptext2">首頁</span></div>
+        <div class=tooltip2><a href="product.html"><img src="../asset/image/store.png" alt=""></a>
+        <span class="tooltiptext2">商品總覽</span></div>
+        <div class=tooltip2><a href="shopping.html"><img src="../asset/image/shopping.png" alt=""></a>
+        <span class="tooltiptext2">購物車</span></div>
+      </div>
+    </div>
+  </div>
+<!--header結束-->
+
+  <form method="post" class="smart-green">
+    <h1>留言板
+      <span>留下對於產品的看法吧!</span>
+    </h1>
+    <label>
+      <span>姓名 :</span>
+      <input id="name" type="text" name="name" class="error" placeholder="請輸入您的姓名" />
+      <div class="error-msg"></div>
+    </label>
+
+    <label>
+      <span>郵箱 :</span>
+      <input id="email" type="email" value="" name="email" placeholder="請輸入郵箱地址" />
+      <div class="error-msg"></div>
+    </label>
+
+    <label>
+      <span>商品名稱 :</span>
+
+      <select name="product">
+        <option value="" style="font-size: 20px; font-weight: bold;">琺瑯鑄鐵鍋具</option>
+        <option value="">雙魚戲荷琺瑯鑄鐵媽咪鍋22cm</option>
+        <option value="">典藏琺瑯鑄鐵圓鍋</option>
+        <option value="">典藏琺瑯鑄鐵媽咪鍋</option>
+        <option value="">萬用窈窕琺瑯鑄鐵鍋</option>
+        <option value="">典藏琺瑯鑄鐵慢燉鍋</option>
+        <option value="">典藏琺瑯圓鐵鍋</option>
+        <option value="">琺瑯鑄鐵山茶花鍋</option>
+        <option value="" style="font-size: 20px; font-weight: bold;">造型瓷器
+        </option>
+        <option value="">珠光薔薇英式午茶杯</option>
+        <option value="">日式清酒壺組</option>
+        <option value="">珠光薔薇花瓶500ml</option>
+        <option value="">韓式飯碗</option>
+        <option value="">深圓盤</option>
+        <option value="">蛋蛋馬克杯</option>
+        <option value="">花蕾系列心型盤4入</option>
+        <option value="">新采和風系列湯匙2入</option>
+        <option value="">花型盤附中式湯匙</option>
+        <option value="" style="font-size: 20px; font-weight: bold;">調理配件
+        </option>
+        <option value="">法式隔熱墊</option>
+        <option value="">V鏟杓</option>
+        <option value="">不鏽鋼矽膠餐夾</option>
+        <option value="">南瓜鏟</option>
+        <option value="">鍋耳防燙握把2入</option>
+        <option value="">長形烤盤</option>
+        <option value="">楓木砧板</option>
+        <option value="">鍋把套</option>
+        <option value="">南瓜鏟</option>
+      </select>
+      <div class="error-msg"></div>
+    </label>
+    <label>
+      <span>評價</span>
+      <div class="star">
+        <input type="radio" name="item" id="item01" checked /><!--这里设置checked初始状态-->
+    <label class="star-item" for="item01" title=""></label>
+    <input type="radio" name="item" id="item02" />
+    <label class="star-item" for="item02" title=""></label>
+    <input type="radio" name="item" id="item03" />
+    <label class="star-item" for="item03" title=""></label>
+    <input type="radio" name="item" id="item04" />
+    <label class="star-item" for="item04" title=""></label>
+    <input type="radio" name="item" id="item05" />
+    <label class="star-item" for="item05" title=""></label>
+  </div>
+      
+    
+    </label>
+    <label>
+      <span>主旨 :</span>
+      <input id="subject" type="text" name="subject" class="error" placeholder="請輸入評論主旨" />
+      <div class="error-msg"></div>
+    </label>
+
+    <label>
+      <span>留言 :</span>
+      <textarea id="message" type="text" name="message" placeholder="請輸入你的建議"></textarea>
+      <div class="error-msg"></div>
+    </label>
+    <div class="success-msg"></div>
+    <label>
+      <span>&nbsp;</span>
+      <input type="submit" class="button" value="提交" />
+      &nbsp;&nbsp;
+      <input type="reset" class="button" value="重設" />
+
+
+    </label>
+  </form>
+
+
+
+
+
+<!--Footer開始-->
+<div class="footer">
+
+
+
+
+   
+  <!--會漂浮的問號:按了可以寄信-->
+      <a href="mailto:xw789025@gmail.com"><div id="chat" class="animated-chat tada" >?</div></a>
+      <!--漂浮小問號結束-->
+      <!--後端的計數器-->
+      
+      <div class="copyright">copyright&copy;KASY 2021<br>拜訪人數:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位</div>
+     <!--最下面的連結區開始-->
+      <nav class="navbtn2">
+        <div class="item1">
+          <a href="story.html"><h3>關於我們</h3></a>
+  
+        </div>
+        <div class="item2">
+          <a href="question.html"><h3>常見問題</h3></a>
+  
+        </div>
+        <div class="item3">
+          <a href="https://www.lecreuset.com.tw/l"><h3>關於 LE CREUSET</h3></a>
+  
+        </div>
+       
+      </nav> <!--最下面的連結區結束-->
+      <!--到TOP的按鈕開始-->
+      <button onclick="topFunction()" id="topBtn">
+        <img src="../asset/image/top.png">
+      </button>
+    </div>
+  
+  
+  
+  <!--到TOP的按鈕結束-->
+
+
+
+
+<script src="../asset/js/search.js"></script>
+<script src="../asset/js/searchfunction.js"></script>
+<script src="../asset/js/top.js"></script>
+<script src="../asset/js/comment.js"></script>
+
+</body>
+
+</html>

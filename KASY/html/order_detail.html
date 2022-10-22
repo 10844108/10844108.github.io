@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../asset/css/server_page.css">
+    <link rel="stylesheet" href="../asset/css/order_detail.css">
+    <title>Server_Order</title>
+</head>
+
+<body>
+
+    <div id="left">
+        <div id="content-left">
+
+            <a href="server_page.html"><img src="../asset/image/logo.jpg" width="150px" height="140px" id="photo"></a>
+            <br>
+            <!--管理者ID-->
+            <center>KASY0000</center>
+            <br>
+            <hr>
+            <div id="content-select">
+                <br>
+                <center>
+                    <p class="h"><a href="server_member.html">會員管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="server_order.html">訂單管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="goods-all.html">商品管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="goods-add.html">商品新增</a></p>
+                </center>
+                <br>
+            </div>
+            <hr>
+            <div class="select-buttom">
+                <form method="POST" action="">
+                    <hr>
+                    <button type="submit" id="serverout">登出</button>
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="right" style="height: 720px; width: 100%;">
+        <div>
+            <div class="edit">
+                <div class=" tab">
+                    <table border="1">
+                        <caption>
+                            <h2><a href="server_order.html">編號：11111</a></h2>
+                        </caption>
+                        <tr class="con">
+                            <td width="100">編號</td>
+                            <td id="num">11111</td>
+                            <td width="100">日期</td>
+                            <td>5/28</td>
+                        </tr>
+                        <tr class="con">
+                            <td>訂購人</td>
+                            <td colspan="3">翁小媛</td>
+                        </tr>
+                        <tr class="con">
+                            <td>地址</td>
+                            <td colspan="3">桃園市中壢區中北路200號</td>
+                        </tr>
+                        <tr class="con">
+                            <td colspan="2">商品名稱</td>
+                            <td>數量</td>
+                            <td>單價</td>
+                        </tr>
+                        <tr class="con">
+                            <td colspan="2" class="pro">雙魚戲荷琺瑯鑄鐵媽咪鍋</td>
+                            <td class="pro">2</td>
+                            <td class="pro">13,000</td>
+                        </tr>
+                        <tr class="con">
+                            <td colspan="2" class="pro">
+                                鍋耳防燙握把2入
+                            </td>
+                            <td class="pro">5</td>
+                            <td class="pro">1,080</td>
+                        </tr>
+
+                        <tr class="con">
+                            <td colspan="2">小計</td>
+                            <td colspan="2">
+                                31,400
+                            </td>
+                        </tr>
+                        <tr class="con">
+                            <td colspan="2">運費</td>
+                            <td colspan="2">
+                                60
+                            </td>
+                        </tr>
+                        <tr class="con">
+                            <!--滿5000免運-->
+                            <td colspan="2" class="count">運費折抵
+                            </td>
+                            <td colspan="2" class="count">
+                                60
+                            </td>
+                        </tr>
+                        <tr class="con">
+                            <!--全館九折-->
+                            <td colspan="2" class="count">折扣</td>
+                            <td colspan="2" class="count">
+                                3,140
+                            </td>
+                        </tr>
+                        <tr class="con">
+                            <!--滿千送百-->
+                            <td colspan="2" class="count">訂單回饋</td>
+                            <td colspan="2" class="count">
+                                300
+                            </td>
+                        </tr>
+                        <tr class="con">
+                            <td colspan="2">訂單總額</td>
+                            <td colspan="2">
+                                28,260
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

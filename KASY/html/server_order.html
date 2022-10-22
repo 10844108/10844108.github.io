@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../asset/css/server_page.css">
+    <link rel="stylesheet" href="../asset/css/server_order.css">
+    <title>Server_Order</title>
+</head>
+
+<body>
+
+    <div id="left">
+        <div id="content-left">
+
+            <a href="server_page.html"><img src="../asset/image/logo.jpg" width="150px" height="140px" id="photo"></a>
+            <br>
+            <!--管理者ID-->
+            <center>KASY0000</center>
+            <br>
+            <hr>
+            <div id="content-select">
+                <br>
+                <center>
+                    <p class="h"><a href="server_member.html">會員管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="server_order.html">訂單管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="goods-all.html">商品管理</a></p>
+                </center>
+                <br>
+                <center>
+                    <p class="h"><a href="goods-add.html">商品新增</a></p>
+                </center>
+                <br>
+            </div>
+            <hr>
+            <div class="select-buttom">
+                <form method="POST" action="">
+                    <hr>
+                    <button type="submit" id="serverout">登出</button>
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="right" style="height: 720px; width: 100%;">
+        <div class=" member">
+            <table border="1">
+                <caption>
+                    <h2>訂單管理</h2>
+                </caption>
+                <tr class="con">
+                    <td class="fir">編號</td>
+                    <td class="fir">日期</td>
+                    <td class="fir">訂購人</td>
+                    <td class="fir">地址</td>
+                    <td class="fir">電子郵件</td>
+                    <td class="fir">聯絡電話</td>
+                    <td class="fir">管理</td>
+                </tr>
+                <tr class="con">
+                    <td><a href="order_detail.html" id="num">11111</a></td>
+                    <td>2021/05/28</td>
+                    <td>翁小媛</td>
+                    <td>桃園市中壢區中北路200號</td>
+                    <td>smallyuan@gmail.com</td>
+                    <td>0912345678</td>
+                    <td>
+                        <form method="POST" action="">
+                            <button type="submit" name="delete" class="delete">刪除</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
