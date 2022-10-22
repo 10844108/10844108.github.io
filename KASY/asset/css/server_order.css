@@ -1,0 +1,56 @@
+.member {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 150px;
+  background-color: #E1F1E7;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+table {
+  border: 5px white;
+  width: 750px;
+  border-spacing: 5px;
+}
+
+.con>td {
+  padding: 10px 15px 10px 10px;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+td {
+  white-space: nowrap;
+}
+
+.delete {
+  background-color: #C9DECF;
+  border-radius: 5px;
+  border: dashed;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h2:hover {
+  background-color: #C9DECF;
+  border-radius: 10px;
+  width: 20%;
+}
+
+button {
+  width: 80px;
+  height: 35px;
+}
+
+.fir {
+  background-color: #C5DAD1;
+}
+
+#num:hover {
+  background-color: #909FA6;
+  border-radius: 5px;
+}

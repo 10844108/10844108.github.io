@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 16px;
+    border: 9px solid rgb(230, 220, 190);
+    background-color: rgb(255, 253, 133);
+    border-radius: 5px;
+    line-height:140%;
+   
+  }
+  .column1 .capital{
+      font-size: 20px;
+      font-weight: bolder;
+  }
+
+  .column1 .star{
+      position:relative;
+     
+      left:2px;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+ 
+ .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .column1 img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+    font-weight: bolder;
+    text-decoration: dashed burlywood 4px;
+  }
+
+
+
+
+#btnContainer>button{
+    margin-left: 20px;
+}
+
+  /*the container must be positioned relative:*/
+.custom-select {
+    position: absolute;
+    top: 27%;
+    right:10px;
+
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: rgb(166, 190, 214);
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: rgb(163, 188, 214);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .fli{
+      padding: 1%;
+  }
+  .fli>h2{
+      position: relative;
+      top:7%;
+      left: 7px;
+  }
+  .checked {
+    color: orange;
+  }
+  
+
+  .button1 {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    position: relative;
+    top: 35%;
+    left:250px;
+  }
+  
+  .button1:hover {background-color: #3e8e41}
+  
+  .button1:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+ 

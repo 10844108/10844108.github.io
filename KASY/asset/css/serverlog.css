@@ -1,0 +1,118 @@
+#log-board1 {
+    background-color: #EDEEF0;
+    width: 350px;
+    height: 425px;
+    margin-left: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #838BB2;
+}
+
+#log-top1 {
+    background-color: #838BB2;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#log-content1 {
+    text-align: left;
+    padding: 2px;
+    margin-top: 20px;
+}
+
+.word {
+    font-size: 18px;
+}
+
+#acc1 {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background: #C9CBE0;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 20px;
+    height: 35px;
+}
+
+#pass1 {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background: #CACFE3;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 20px;
+    height: 35px;
+}
+
+#login-button1 {
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: 0;
+    background-color: #838BB2;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login-button1:hover {
+    color: #838BB2;
+    background-color: #fff;
+    border: 2px #838BB2 solid;
+}
+
+#reset-button1 {
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: 0;
+    background-color: #838BB2;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset-button1:hover {
+    color: #838BB2;
+    background-color: #fff;
+    border: 2px #838BB2 solid;
+}
+
+#member-button {
+    width: 300px;
+    background-color: #838BB2;
+    font-size: 10pt;
+    padding: 10px 20px;
+    margin: 0 5% 10px 5%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+    color: white;
+}
+
+#member-button:hover {
+    border-radius: 15px;
+    color: #838BB2;
+    background-color: #fff;
+    border: 2px #838BB2 solid;
+}
